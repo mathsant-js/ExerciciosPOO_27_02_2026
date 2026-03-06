@@ -1,4 +1,7 @@
+import model.Carro;
+import model.Moto;
 import model.Pessoa;
+import model.Veiculo;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +26,14 @@ public class Main {
         pessoa.setQuantidade(-10);
 
         // Exercício 2
+        Veiculo carro = new Carro("Hyundai", "HB20", 2018, 4);
+        Veiculo moto = new Moto("Kawasaki", "Ninja 650R", 2020, "Normal");
 
+        carro.exibirDados();
+        System.out.println();
+        moto.exibirDados();
+
+        // Exercício 3
 
     }
 }
